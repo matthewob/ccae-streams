@@ -1,0 +1,20 @@
+{"namespace": "io.confluent.connect.avro",
+ "type": "record",
+ "name": "CheckedInOutRights",
+ "fields": [
+   {"name": "CURRENCY_ID", "type": ["null", "int"], "default": null},
+    {"name": "CUSTOMER_ID", "type": ["null", "long"], "default": null},
+   {"name": "END_DATE", "type": "string"},
+   {"name": "ID", "type": "long"},
+   {"name": "LANGUAGE_ID", "type": "long"},
+   {"name": "LICENSE_FEE", "type": ["null", "int"], "default": null},
+   {"name": "MEDIA_ID", "type": "long"},
+   {"name": "PRODUCT_ID", "type": ["null", "long"], "default": null},
+   {"name": "RIGHTS_GROUP_ID", "type": "long"},
+   {"name": "RIGHT_TYPE_ID", "type": "int"},
+   {"name": "SOURCE_DETAIL_ID", "type": "long"},
+   {"name": "SOURCE_ID", "type": ["null", "long"], "default": null},
+   {"name": "START_DATE", "type": "string"},
+   {"name": "TERRITORY_ID", "type": "long"}
+ ]
+}
