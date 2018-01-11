@@ -74,12 +74,12 @@ public class CCAEStreamsTest
 		recInRights.setCATCHUPEPISODELIMIT(10);
 		recInRights.setGROUPID(1111L);
 		recInRights.setHASHVALUE(12);
-		recInRights.setLANGUAGEEXCLUSIONID(2222L);
-		recInRights.setLANGUAGEID(3333L);
+		recInRights.setLANGUAGEEXCLUSIONID(22L);
+		recInRights.setLANGUAGEID(2L);
 		recInRights.setLICENSERIGHTSID(4444L);
 		recInRights.setLICENSESUBTYPEID(12);
 		recInRights.setLICENSETYPEID(1);
-		recInRights.setMEDIAID(5555L);
+		recInRights.setMEDIAID(2222L);
 		recInRights.setMLTGROUPID(6666L);
 		recInRights.setMONTHS(1);
 		recInRights.setRIGHTSENDDATETBD("9999-09-09T07:00:00.000+0000");
@@ -88,22 +88,22 @@ public class CCAEStreamsTest
 		recInRights.setTERRITORYID(7777L);
 		recInRights.setTITLELICENSERIGHTID(8888L);
 		recInRights.setTITLELISTMAPID(9999L);
-		recInRights.setTLRENDDATE("9/30/2017");
-		recInRights.setTLRSTARTDATE("9/7/2017");
+		recInRights.setTLRENDDATE("7/1/2019");
+		recInRights.setTLRSTARTDATE("1/1/2017");
 		
 		CheckedInOutRights expRights = new CheckedInOutRights();
-		expRights.setCURRENCYID(19);
-		expRights.setCUSTOMERID(409L);
+		//expRights.setCURRENCYID(19); missing mapping
+		//expRights.setCUSTOMERID(409L); missing mapping
 		expRights.setENDDATE("7/1/2019");
-		expRights.setID(1111L);
+		expRights.setID(4444L);
 		expRights.setLANGUAGEID(2L);
-		expRights.setLICENSEFEE(0);
+		//expRights.setLICENSEFEE(0); missing mapping
 		expRights.setMEDIAID(2222L);
-		expRights.setPRODUCTID(3333L);
-		expRights.setRIGHTSGROUPID(4444L);
-		expRights.setRIGHTTYPEID(21);
-		expRights.setSOURCEDETAILID(5555L);
-		expRights.setSOURCEID(6666L);
+		//expRights.setPRODUCTID(3333L); missing mapping
+		expRights.setRIGHTSGROUPID(8888L);
+		expRights.setRIGHTTYPEID(1);
+		expRights.setSOURCEDETAILID(6666L);
+		//expRights.setSOURCEID(5555L);
 		expRights.setSTARTDATE("1/1/2017");
 		expRights.setTERRITORYID(7777L);
 		

@@ -47,7 +47,7 @@ public class CCAEStreams
 	}
 
 	public static void configureStreams(String bootstrapServers, String schemaRegistryUrl) {
-		streamsConfig.put(StreamsConfig.APPLICATION_ID_CONFIG, "deal-info-streams");
+		streamsConfig.put(StreamsConfig.APPLICATION_ID_CONFIG, "ccae-streams");
 		streamsConfig.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
 		streamsConfig.put(AbstractKafkaAvroSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG, schemaRegistryUrl);
 		streamsConfig.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
@@ -55,6 +55,8 @@ public class CCAEStreams
 		final Map<String, String> serdeConfig = Collections.singletonMap(AbstractKafkaAvroSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG, schemaRegistryUrl);
 		sourceSerdeContract.configure(serdeConfig, false);
 		sinkSerdeContract.configure(serdeConfig, false);
+		sourceSerdeRights.configure(serdeConfig, false);
+		sinkSerdeRights.configure(serdeConfig, false);
 	}
 
 	public static KStreamBuilder buildStream() {
