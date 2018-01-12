@@ -1,4 +1,4 @@
-{"namespace": "io.confluent.connect.avro",
+{"namespace": "",
   "type": "record",
   "name": "DealInfo",
   "fields": [

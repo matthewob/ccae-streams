@@ -3,11 +3,10 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package io.confluent.connect.avro;  
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CheckedInOutRights\",\"namespace\":\"io.confluent.connect.avro\",\"fields\":[{\"name\":\"CURRENCY_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CUSTOMER_ID\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"END_DATE\",\"type\":\"string\"},{\"name\":\"ID\",\"type\":\"long\"},{\"name\":\"LANGUAGE_ID\",\"type\":\"long\"},{\"name\":\"LICENSE_FEE\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"MEDIA_ID\",\"type\":\"long\"},{\"name\":\"PRODUCT_ID\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"RIGHTS_GROUP_ID\",\"type\":\"long\"},{\"name\":\"RIGHT_TYPE_ID\",\"type\":\"int\"},{\"name\":\"SOURCE_DETAIL_ID\",\"type\":\"long\"},{\"name\":\"SOURCE_ID\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"START_DATE\",\"type\":\"string\"},{\"name\":\"TERRITORY_ID\",\"type\":\"long\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CheckedInOutRights\",\"fields\":[{\"name\":\"CURRENCY_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CUSTOMER_ID\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"END_DATE\",\"type\":\"string\"},{\"name\":\"ID\",\"type\":\"long\"},{\"name\":\"LANGUAGE_ID\",\"type\":\"long\"},{\"name\":\"LICENSE_FEE\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"MEDIA_ID\",\"type\":\"long\"},{\"name\":\"PRODUCT_ID\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"RIGHTS_GROUP_ID\",\"type\":\"long\"},{\"name\":\"RIGHT_TYPE_ID\",\"type\":\"int\"},{\"name\":\"SOURCE_DETAIL_ID\",\"type\":\"long\"},{\"name\":\"SOURCE_ID\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"START_DATE\",\"type\":\"string\"},{\"name\":\"TERRITORY_ID\",\"type\":\"long\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Integer CURRENCY_ID;
   @Deprecated public java.lang.Long CUSTOMER_ID;
@@ -305,18 +304,18 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
   }
 
   /** Creates a new CheckedInOutRights RecordBuilder */
-  public static io.confluent.connect.avro.CheckedInOutRights.Builder newBuilder() {
-    return new io.confluent.connect.avro.CheckedInOutRights.Builder();
+  public static CheckedInOutRights.Builder newBuilder() {
+    return new CheckedInOutRights.Builder();
   }
   
   /** Creates a new CheckedInOutRights RecordBuilder by copying an existing Builder */
-  public static io.confluent.connect.avro.CheckedInOutRights.Builder newBuilder(io.confluent.connect.avro.CheckedInOutRights.Builder other) {
-    return new io.confluent.connect.avro.CheckedInOutRights.Builder(other);
+  public static CheckedInOutRights.Builder newBuilder(CheckedInOutRights.Builder other) {
+    return new CheckedInOutRights.Builder(other);
   }
   
   /** Creates a new CheckedInOutRights RecordBuilder by copying an existing CheckedInOutRights instance */
-  public static io.confluent.connect.avro.CheckedInOutRights.Builder newBuilder(io.confluent.connect.avro.CheckedInOutRights other) {
-    return new io.confluent.connect.avro.CheckedInOutRights.Builder(other);
+  public static CheckedInOutRights.Builder newBuilder(CheckedInOutRights other) {
+    return new CheckedInOutRights.Builder(other);
   }
   
   /**
@@ -342,11 +341,11 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
 
     /** Creates a new Builder */
     private Builder() {
-      super(io.confluent.connect.avro.CheckedInOutRights.SCHEMA$);
+      super(CheckedInOutRights.SCHEMA$);
     }
     
     /** Creates a Builder by copying an existing Builder */
-    private Builder(io.confluent.connect.avro.CheckedInOutRights.Builder other) {
+    private Builder(CheckedInOutRights.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.CURRENCY_ID)) {
         this.CURRENCY_ID = data().deepCopy(fields()[0].schema(), other.CURRENCY_ID);
@@ -407,8 +406,8 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Creates a Builder by copying an existing CheckedInOutRights instance */
-    private Builder(io.confluent.connect.avro.CheckedInOutRights other) {
-            super(io.confluent.connect.avro.CheckedInOutRights.SCHEMA$);
+    private Builder(CheckedInOutRights other) {
+            super(CheckedInOutRights.SCHEMA$);
       if (isValidValue(fields()[0], other.CURRENCY_ID)) {
         this.CURRENCY_ID = data().deepCopy(fields()[0].schema(), other.CURRENCY_ID);
         fieldSetFlags()[0] = true;
@@ -473,7 +472,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'CURRENCY_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setCURRENCYID(java.lang.Integer value) {
+    public CheckedInOutRights.Builder setCURRENCYID(java.lang.Integer value) {
       validate(fields()[0], value);
       this.CURRENCY_ID = value;
       fieldSetFlags()[0] = true;
@@ -486,7 +485,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'CURRENCY_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearCURRENCYID() {
+    public CheckedInOutRights.Builder clearCURRENCYID() {
       CURRENCY_ID = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -498,7 +497,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'CUSTOMER_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setCUSTOMERID(java.lang.Long value) {
+    public CheckedInOutRights.Builder setCUSTOMERID(java.lang.Long value) {
       validate(fields()[1], value);
       this.CUSTOMER_ID = value;
       fieldSetFlags()[1] = true;
@@ -511,7 +510,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'CUSTOMER_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearCUSTOMERID() {
+    public CheckedInOutRights.Builder clearCUSTOMERID() {
       CUSTOMER_ID = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -523,7 +522,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'END_DATE' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setENDDATE(java.lang.CharSequence value) {
+    public CheckedInOutRights.Builder setENDDATE(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.END_DATE = value;
       fieldSetFlags()[2] = true;
@@ -536,7 +535,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'END_DATE' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearENDDATE() {
+    public CheckedInOutRights.Builder clearENDDATE() {
       END_DATE = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -548,7 +547,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setID(long value) {
+    public CheckedInOutRights.Builder setID(long value) {
       validate(fields()[3], value);
       this.ID = value;
       fieldSetFlags()[3] = true;
@@ -561,7 +560,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearID() {
+    public CheckedInOutRights.Builder clearID() {
       fieldSetFlags()[3] = false;
       return this;
     }
@@ -572,7 +571,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'LANGUAGE_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setLANGUAGEID(long value) {
+    public CheckedInOutRights.Builder setLANGUAGEID(long value) {
       validate(fields()[4], value);
       this.LANGUAGE_ID = value;
       fieldSetFlags()[4] = true;
@@ -585,7 +584,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'LANGUAGE_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearLANGUAGEID() {
+    public CheckedInOutRights.Builder clearLANGUAGEID() {
       fieldSetFlags()[4] = false;
       return this;
     }
@@ -596,7 +595,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'LICENSE_FEE' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setLICENSEFEE(java.lang.Integer value) {
+    public CheckedInOutRights.Builder setLICENSEFEE(java.lang.Integer value) {
       validate(fields()[5], value);
       this.LICENSE_FEE = value;
       fieldSetFlags()[5] = true;
@@ -609,7 +608,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'LICENSE_FEE' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearLICENSEFEE() {
+    public CheckedInOutRights.Builder clearLICENSEFEE() {
       LICENSE_FEE = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -621,7 +620,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'MEDIA_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setMEDIAID(long value) {
+    public CheckedInOutRights.Builder setMEDIAID(long value) {
       validate(fields()[6], value);
       this.MEDIA_ID = value;
       fieldSetFlags()[6] = true;
@@ -634,7 +633,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'MEDIA_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearMEDIAID() {
+    public CheckedInOutRights.Builder clearMEDIAID() {
       fieldSetFlags()[6] = false;
       return this;
     }
@@ -645,7 +644,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'PRODUCT_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setPRODUCTID(java.lang.Long value) {
+    public CheckedInOutRights.Builder setPRODUCTID(java.lang.Long value) {
       validate(fields()[7], value);
       this.PRODUCT_ID = value;
       fieldSetFlags()[7] = true;
@@ -658,7 +657,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'PRODUCT_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearPRODUCTID() {
+    public CheckedInOutRights.Builder clearPRODUCTID() {
       PRODUCT_ID = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -670,7 +669,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'RIGHTS_GROUP_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setRIGHTSGROUPID(long value) {
+    public CheckedInOutRights.Builder setRIGHTSGROUPID(long value) {
       validate(fields()[8], value);
       this.RIGHTS_GROUP_ID = value;
       fieldSetFlags()[8] = true;
@@ -683,7 +682,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'RIGHTS_GROUP_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearRIGHTSGROUPID() {
+    public CheckedInOutRights.Builder clearRIGHTSGROUPID() {
       fieldSetFlags()[8] = false;
       return this;
     }
@@ -694,7 +693,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'RIGHT_TYPE_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setRIGHTTYPEID(int value) {
+    public CheckedInOutRights.Builder setRIGHTTYPEID(int value) {
       validate(fields()[9], value);
       this.RIGHT_TYPE_ID = value;
       fieldSetFlags()[9] = true;
@@ -707,7 +706,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'RIGHT_TYPE_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearRIGHTTYPEID() {
+    public CheckedInOutRights.Builder clearRIGHTTYPEID() {
       fieldSetFlags()[9] = false;
       return this;
     }
@@ -718,7 +717,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'SOURCE_DETAIL_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setSOURCEDETAILID(long value) {
+    public CheckedInOutRights.Builder setSOURCEDETAILID(long value) {
       validate(fields()[10], value);
       this.SOURCE_DETAIL_ID = value;
       fieldSetFlags()[10] = true;
@@ -731,7 +730,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'SOURCE_DETAIL_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearSOURCEDETAILID() {
+    public CheckedInOutRights.Builder clearSOURCEDETAILID() {
       fieldSetFlags()[10] = false;
       return this;
     }
@@ -742,7 +741,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'SOURCE_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setSOURCEID(java.lang.Long value) {
+    public CheckedInOutRights.Builder setSOURCEID(java.lang.Long value) {
       validate(fields()[11], value);
       this.SOURCE_ID = value;
       fieldSetFlags()[11] = true;
@@ -755,7 +754,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'SOURCE_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearSOURCEID() {
+    public CheckedInOutRights.Builder clearSOURCEID() {
       SOURCE_ID = null;
       fieldSetFlags()[11] = false;
       return this;
@@ -767,7 +766,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'START_DATE' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setSTARTDATE(java.lang.CharSequence value) {
+    public CheckedInOutRights.Builder setSTARTDATE(java.lang.CharSequence value) {
       validate(fields()[12], value);
       this.START_DATE = value;
       fieldSetFlags()[12] = true;
@@ -780,7 +779,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'START_DATE' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearSTARTDATE() {
+    public CheckedInOutRights.Builder clearSTARTDATE() {
       START_DATE = null;
       fieldSetFlags()[12] = false;
       return this;
@@ -792,7 +791,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Sets the value of the 'TERRITORY_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder setTERRITORYID(long value) {
+    public CheckedInOutRights.Builder setTERRITORYID(long value) {
       validate(fields()[13], value);
       this.TERRITORY_ID = value;
       fieldSetFlags()[13] = true;
@@ -805,7 +804,7 @@ public class CheckedInOutRights extends org.apache.avro.specific.SpecificRecordB
     }
     
     /** Clears the value of the 'TERRITORY_ID' field */
-    public io.confluent.connect.avro.CheckedInOutRights.Builder clearTERRITORYID() {
+    public CheckedInOutRights.Builder clearTERRITORYID() {
       fieldSetFlags()[13] = false;
       return this;
     }

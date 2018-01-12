@@ -3,11 +3,10 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package io.confluent.connect.avro;  
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LicenseRight\",\"namespace\":\"io.confluent.connect.avro\",\"fields\":[{\"name\":\"APPLICATION_ID\",\"type\":\"int\"},{\"name\":\"CARVE_OUT_CUSTOMER_LIMIT\",\"type\":\"int\"},{\"name\":\"CARVE_OUT_DETAILS\",\"type\":\"string\"},{\"name\":\"CATCH_UP_DURATION_LIMIT\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CATCH_UP_EPISODE_LIMIT\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"GROUP_ID\",\"type\":\"long\"},{\"name\":\"HASH_VALUE\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"LANGUAGE_EXCLUSION_ID\",\"type\":\"long\"},{\"name\":\"LANGUAGE_ID\",\"type\":\"long\"},{\"name\":\"LICENSE_RIGHTS_ID\",\"type\":\"long\"},{\"name\":\"LICENSE_SUB_TYPE_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"LICENSE_TYPE_ID\",\"type\":\"int\"},{\"name\":\"MEDIA_ID\",\"type\":\"long\"},{\"name\":\"MLT_GROUP_ID\",\"type\":\"long\"},{\"name\":\"MONTHS\",\"type\":\"int\"},{\"name\":\"RIGHTS_END_DATE_TBD\",\"type\":\"string\"},{\"name\":\"RIGHTS_START_DATE_TBD\",\"type\":\"string\"},{\"name\":\"TENTATIVE\",\"type\":\"int\"},{\"name\":\"TERRITORY_ID\",\"type\":\"long\"},{\"name\":\"TITLE_LICENSE_RIGHT_ID\",\"type\":\"long\"},{\"name\":\"TITLE_LIST_MAP_ID\",\"type\":\"long\"},{\"name\":\"TLR_END_DATE\",\"type\":\"string\"},{\"name\":\"TLR_START_DATE\",\"type\":\"string\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LicenseRight\",\"fields\":[{\"name\":\"APPLICATION_ID\",\"type\":\"int\"},{\"name\":\"CARVE_OUT_CUSTOMER_LIMIT\",\"type\":\"int\"},{\"name\":\"CARVE_OUT_DETAILS\",\"type\":\"string\"},{\"name\":\"CATCH_UP_DURATION_LIMIT\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CATCH_UP_EPISODE_LIMIT\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"GROUP_ID\",\"type\":\"long\"},{\"name\":\"HASH_VALUE\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"LANGUAGE_EXCLUSION_ID\",\"type\":\"long\"},{\"name\":\"LANGUAGE_ID\",\"type\":\"long\"},{\"name\":\"LICENSE_RIGHTS_ID\",\"type\":\"long\"},{\"name\":\"LICENSE_SUB_TYPE_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"LICENSE_TYPE_ID\",\"type\":\"int\"},{\"name\":\"MEDIA_ID\",\"type\":\"long\"},{\"name\":\"MLT_GROUP_ID\",\"type\":\"long\"},{\"name\":\"MONTHS\",\"type\":\"int\"},{\"name\":\"RIGHTS_END_DATE_TBD\",\"type\":\"string\"},{\"name\":\"RIGHTS_START_DATE_TBD\",\"type\":\"string\"},{\"name\":\"TENTATIVE\",\"type\":\"int\"},{\"name\":\"TERRITORY_ID\",\"type\":\"long\"},{\"name\":\"TITLE_LICENSE_RIGHT_ID\",\"type\":\"long\"},{\"name\":\"TITLE_LIST_MAP_ID\",\"type\":\"long\"},{\"name\":\"TLR_END_DATE\",\"type\":\"string\"},{\"name\":\"TLR_START_DATE\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public int APPLICATION_ID;
   @Deprecated public int CARVE_OUT_CUSTOMER_LIMIT;
@@ -476,18 +475,18 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /** Creates a new LicenseRight RecordBuilder */
-  public static io.confluent.connect.avro.LicenseRight.Builder newBuilder() {
-    return new io.confluent.connect.avro.LicenseRight.Builder();
+  public static LicenseRight.Builder newBuilder() {
+    return new LicenseRight.Builder();
   }
   
   /** Creates a new LicenseRight RecordBuilder by copying an existing Builder */
-  public static io.confluent.connect.avro.LicenseRight.Builder newBuilder(io.confluent.connect.avro.LicenseRight.Builder other) {
-    return new io.confluent.connect.avro.LicenseRight.Builder(other);
+  public static LicenseRight.Builder newBuilder(LicenseRight.Builder other) {
+    return new LicenseRight.Builder(other);
   }
   
   /** Creates a new LicenseRight RecordBuilder by copying an existing LicenseRight instance */
-  public static io.confluent.connect.avro.LicenseRight.Builder newBuilder(io.confluent.connect.avro.LicenseRight other) {
-    return new io.confluent.connect.avro.LicenseRight.Builder(other);
+  public static LicenseRight.Builder newBuilder(LicenseRight other) {
+    return new LicenseRight.Builder(other);
   }
   
   /**
@@ -522,11 +521,11 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
 
     /** Creates a new Builder */
     private Builder() {
-      super(io.confluent.connect.avro.LicenseRight.SCHEMA$);
+      super(LicenseRight.SCHEMA$);
     }
     
     /** Creates a Builder by copying an existing Builder */
-    private Builder(io.confluent.connect.avro.LicenseRight.Builder other) {
+    private Builder(LicenseRight.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.APPLICATION_ID)) {
         this.APPLICATION_ID = data().deepCopy(fields()[0].schema(), other.APPLICATION_ID);
@@ -623,8 +622,8 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Creates a Builder by copying an existing LicenseRight instance */
-    private Builder(io.confluent.connect.avro.LicenseRight other) {
-            super(io.confluent.connect.avro.LicenseRight.SCHEMA$);
+    private Builder(LicenseRight other) {
+            super(LicenseRight.SCHEMA$);
       if (isValidValue(fields()[0], other.APPLICATION_ID)) {
         this.APPLICATION_ID = data().deepCopy(fields()[0].schema(), other.APPLICATION_ID);
         fieldSetFlags()[0] = true;
@@ -725,7 +724,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'APPLICATION_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setAPPLICATIONID(int value) {
+    public LicenseRight.Builder setAPPLICATIONID(int value) {
       validate(fields()[0], value);
       this.APPLICATION_ID = value;
       fieldSetFlags()[0] = true;
@@ -738,7 +737,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'APPLICATION_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearAPPLICATIONID() {
+    public LicenseRight.Builder clearAPPLICATIONID() {
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -749,7 +748,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'CARVE_OUT_CUSTOMER_LIMIT' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setCARVEOUTCUSTOMERLIMIT(int value) {
+    public LicenseRight.Builder setCARVEOUTCUSTOMERLIMIT(int value) {
       validate(fields()[1], value);
       this.CARVE_OUT_CUSTOMER_LIMIT = value;
       fieldSetFlags()[1] = true;
@@ -762,7 +761,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'CARVE_OUT_CUSTOMER_LIMIT' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearCARVEOUTCUSTOMERLIMIT() {
+    public LicenseRight.Builder clearCARVEOUTCUSTOMERLIMIT() {
       fieldSetFlags()[1] = false;
       return this;
     }
@@ -773,7 +772,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'CARVE_OUT_DETAILS' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setCARVEOUTDETAILS(java.lang.CharSequence value) {
+    public LicenseRight.Builder setCARVEOUTDETAILS(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.CARVE_OUT_DETAILS = value;
       fieldSetFlags()[2] = true;
@@ -786,7 +785,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'CARVE_OUT_DETAILS' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearCARVEOUTDETAILS() {
+    public LicenseRight.Builder clearCARVEOUTDETAILS() {
       CARVE_OUT_DETAILS = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -798,7 +797,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'CATCH_UP_DURATION_LIMIT' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setCATCHUPDURATIONLIMIT(java.lang.Integer value) {
+    public LicenseRight.Builder setCATCHUPDURATIONLIMIT(java.lang.Integer value) {
       validate(fields()[3], value);
       this.CATCH_UP_DURATION_LIMIT = value;
       fieldSetFlags()[3] = true;
@@ -811,7 +810,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'CATCH_UP_DURATION_LIMIT' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearCATCHUPDURATIONLIMIT() {
+    public LicenseRight.Builder clearCATCHUPDURATIONLIMIT() {
       CATCH_UP_DURATION_LIMIT = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -823,7 +822,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'CATCH_UP_EPISODE_LIMIT' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setCATCHUPEPISODELIMIT(java.lang.Integer value) {
+    public LicenseRight.Builder setCATCHUPEPISODELIMIT(java.lang.Integer value) {
       validate(fields()[4], value);
       this.CATCH_UP_EPISODE_LIMIT = value;
       fieldSetFlags()[4] = true;
@@ -836,7 +835,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'CATCH_UP_EPISODE_LIMIT' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearCATCHUPEPISODELIMIT() {
+    public LicenseRight.Builder clearCATCHUPEPISODELIMIT() {
       CATCH_UP_EPISODE_LIMIT = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -848,7 +847,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'GROUP_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setGROUPID(long value) {
+    public LicenseRight.Builder setGROUPID(long value) {
       validate(fields()[5], value);
       this.GROUP_ID = value;
       fieldSetFlags()[5] = true;
@@ -861,7 +860,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'GROUP_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearGROUPID() {
+    public LicenseRight.Builder clearGROUPID() {
       fieldSetFlags()[5] = false;
       return this;
     }
@@ -872,7 +871,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'HASH_VALUE' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setHASHVALUE(java.lang.Integer value) {
+    public LicenseRight.Builder setHASHVALUE(java.lang.Integer value) {
       validate(fields()[6], value);
       this.HASH_VALUE = value;
       fieldSetFlags()[6] = true;
@@ -885,7 +884,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'HASH_VALUE' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearHASHVALUE() {
+    public LicenseRight.Builder clearHASHVALUE() {
       HASH_VALUE = null;
       fieldSetFlags()[6] = false;
       return this;
@@ -897,7 +896,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'LANGUAGE_EXCLUSION_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setLANGUAGEEXCLUSIONID(long value) {
+    public LicenseRight.Builder setLANGUAGEEXCLUSIONID(long value) {
       validate(fields()[7], value);
       this.LANGUAGE_EXCLUSION_ID = value;
       fieldSetFlags()[7] = true;
@@ -910,7 +909,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'LANGUAGE_EXCLUSION_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearLANGUAGEEXCLUSIONID() {
+    public LicenseRight.Builder clearLANGUAGEEXCLUSIONID() {
       fieldSetFlags()[7] = false;
       return this;
     }
@@ -921,7 +920,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'LANGUAGE_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setLANGUAGEID(long value) {
+    public LicenseRight.Builder setLANGUAGEID(long value) {
       validate(fields()[8], value);
       this.LANGUAGE_ID = value;
       fieldSetFlags()[8] = true;
@@ -934,7 +933,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'LANGUAGE_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearLANGUAGEID() {
+    public LicenseRight.Builder clearLANGUAGEID() {
       fieldSetFlags()[8] = false;
       return this;
     }
@@ -945,7 +944,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'LICENSE_RIGHTS_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setLICENSERIGHTSID(long value) {
+    public LicenseRight.Builder setLICENSERIGHTSID(long value) {
       validate(fields()[9], value);
       this.LICENSE_RIGHTS_ID = value;
       fieldSetFlags()[9] = true;
@@ -958,7 +957,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'LICENSE_RIGHTS_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearLICENSERIGHTSID() {
+    public LicenseRight.Builder clearLICENSERIGHTSID() {
       fieldSetFlags()[9] = false;
       return this;
     }
@@ -969,7 +968,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'LICENSE_SUB_TYPE_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setLICENSESUBTYPEID(java.lang.Integer value) {
+    public LicenseRight.Builder setLICENSESUBTYPEID(java.lang.Integer value) {
       validate(fields()[10], value);
       this.LICENSE_SUB_TYPE_ID = value;
       fieldSetFlags()[10] = true;
@@ -982,7 +981,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'LICENSE_SUB_TYPE_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearLICENSESUBTYPEID() {
+    public LicenseRight.Builder clearLICENSESUBTYPEID() {
       LICENSE_SUB_TYPE_ID = null;
       fieldSetFlags()[10] = false;
       return this;
@@ -994,7 +993,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'LICENSE_TYPE_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setLICENSETYPEID(int value) {
+    public LicenseRight.Builder setLICENSETYPEID(int value) {
       validate(fields()[11], value);
       this.LICENSE_TYPE_ID = value;
       fieldSetFlags()[11] = true;
@@ -1007,7 +1006,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'LICENSE_TYPE_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearLICENSETYPEID() {
+    public LicenseRight.Builder clearLICENSETYPEID() {
       fieldSetFlags()[11] = false;
       return this;
     }
@@ -1018,7 +1017,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'MEDIA_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setMEDIAID(long value) {
+    public LicenseRight.Builder setMEDIAID(long value) {
       validate(fields()[12], value);
       this.MEDIA_ID = value;
       fieldSetFlags()[12] = true;
@@ -1031,7 +1030,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'MEDIA_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearMEDIAID() {
+    public LicenseRight.Builder clearMEDIAID() {
       fieldSetFlags()[12] = false;
       return this;
     }
@@ -1042,7 +1041,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'MLT_GROUP_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setMLTGROUPID(long value) {
+    public LicenseRight.Builder setMLTGROUPID(long value) {
       validate(fields()[13], value);
       this.MLT_GROUP_ID = value;
       fieldSetFlags()[13] = true;
@@ -1055,7 +1054,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'MLT_GROUP_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearMLTGROUPID() {
+    public LicenseRight.Builder clearMLTGROUPID() {
       fieldSetFlags()[13] = false;
       return this;
     }
@@ -1066,7 +1065,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'MONTHS' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setMONTHS(int value) {
+    public LicenseRight.Builder setMONTHS(int value) {
       validate(fields()[14], value);
       this.MONTHS = value;
       fieldSetFlags()[14] = true;
@@ -1079,7 +1078,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'MONTHS' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearMONTHS() {
+    public LicenseRight.Builder clearMONTHS() {
       fieldSetFlags()[14] = false;
       return this;
     }
@@ -1090,7 +1089,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'RIGHTS_END_DATE_TBD' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setRIGHTSENDDATETBD(java.lang.CharSequence value) {
+    public LicenseRight.Builder setRIGHTSENDDATETBD(java.lang.CharSequence value) {
       validate(fields()[15], value);
       this.RIGHTS_END_DATE_TBD = value;
       fieldSetFlags()[15] = true;
@@ -1103,7 +1102,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'RIGHTS_END_DATE_TBD' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearRIGHTSENDDATETBD() {
+    public LicenseRight.Builder clearRIGHTSENDDATETBD() {
       RIGHTS_END_DATE_TBD = null;
       fieldSetFlags()[15] = false;
       return this;
@@ -1115,7 +1114,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'RIGHTS_START_DATE_TBD' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setRIGHTSSTARTDATETBD(java.lang.CharSequence value) {
+    public LicenseRight.Builder setRIGHTSSTARTDATETBD(java.lang.CharSequence value) {
       validate(fields()[16], value);
       this.RIGHTS_START_DATE_TBD = value;
       fieldSetFlags()[16] = true;
@@ -1128,7 +1127,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'RIGHTS_START_DATE_TBD' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearRIGHTSSTARTDATETBD() {
+    public LicenseRight.Builder clearRIGHTSSTARTDATETBD() {
       RIGHTS_START_DATE_TBD = null;
       fieldSetFlags()[16] = false;
       return this;
@@ -1140,7 +1139,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'TENTATIVE' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setTENTATIVE(int value) {
+    public LicenseRight.Builder setTENTATIVE(int value) {
       validate(fields()[17], value);
       this.TENTATIVE = value;
       fieldSetFlags()[17] = true;
@@ -1153,7 +1152,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'TENTATIVE' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearTENTATIVE() {
+    public LicenseRight.Builder clearTENTATIVE() {
       fieldSetFlags()[17] = false;
       return this;
     }
@@ -1164,7 +1163,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'TERRITORY_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setTERRITORYID(long value) {
+    public LicenseRight.Builder setTERRITORYID(long value) {
       validate(fields()[18], value);
       this.TERRITORY_ID = value;
       fieldSetFlags()[18] = true;
@@ -1177,7 +1176,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'TERRITORY_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearTERRITORYID() {
+    public LicenseRight.Builder clearTERRITORYID() {
       fieldSetFlags()[18] = false;
       return this;
     }
@@ -1188,7 +1187,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'TITLE_LICENSE_RIGHT_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setTITLELICENSERIGHTID(long value) {
+    public LicenseRight.Builder setTITLELICENSERIGHTID(long value) {
       validate(fields()[19], value);
       this.TITLE_LICENSE_RIGHT_ID = value;
       fieldSetFlags()[19] = true;
@@ -1201,7 +1200,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'TITLE_LICENSE_RIGHT_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearTITLELICENSERIGHTID() {
+    public LicenseRight.Builder clearTITLELICENSERIGHTID() {
       fieldSetFlags()[19] = false;
       return this;
     }
@@ -1212,7 +1211,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'TITLE_LIST_MAP_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setTITLELISTMAPID(long value) {
+    public LicenseRight.Builder setTITLELISTMAPID(long value) {
       validate(fields()[20], value);
       this.TITLE_LIST_MAP_ID = value;
       fieldSetFlags()[20] = true;
@@ -1225,7 +1224,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'TITLE_LIST_MAP_ID' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearTITLELISTMAPID() {
+    public LicenseRight.Builder clearTITLELISTMAPID() {
       fieldSetFlags()[20] = false;
       return this;
     }
@@ -1236,7 +1235,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'TLR_END_DATE' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setTLRENDDATE(java.lang.CharSequence value) {
+    public LicenseRight.Builder setTLRENDDATE(java.lang.CharSequence value) {
       validate(fields()[21], value);
       this.TLR_END_DATE = value;
       fieldSetFlags()[21] = true;
@@ -1249,7 +1248,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'TLR_END_DATE' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearTLRENDDATE() {
+    public LicenseRight.Builder clearTLRENDDATE() {
       TLR_END_DATE = null;
       fieldSetFlags()[21] = false;
       return this;
@@ -1261,7 +1260,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Sets the value of the 'TLR_START_DATE' field */
-    public io.confluent.connect.avro.LicenseRight.Builder setTLRSTARTDATE(java.lang.CharSequence value) {
+    public LicenseRight.Builder setTLRSTARTDATE(java.lang.CharSequence value) {
       validate(fields()[22], value);
       this.TLR_START_DATE = value;
       fieldSetFlags()[22] = true;
@@ -1274,7 +1273,7 @@ public class LicenseRight extends org.apache.avro.specific.SpecificRecordBase im
     }
     
     /** Clears the value of the 'TLR_START_DATE' field */
-    public io.confluent.connect.avro.LicenseRight.Builder clearTLRSTARTDATE() {
+    public LicenseRight.Builder clearTLRSTARTDATE() {
       TLR_START_DATE = null;
       fieldSetFlags()[22] = false;
       return this;

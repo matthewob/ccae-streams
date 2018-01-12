@@ -3,11 +3,10 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package io.confluent.connect.avro;  
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DealInfo\",\"namespace\":\"io.confluent.connect.avro\",\"fields\":[{\"name\":\"BUSINESS_UNIT_CODE\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"CURRENCY_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CUSTOMER_ID\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"DEAL_ID\",\"type\":\"long\"},{\"name\":\"DEAL_STATUS_ID\",\"type\":\"int\"},{\"name\":\"DEAL_TYPE_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"MAX_END_DATE\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}],\"default\":null},{\"name\":\"MIN_START_DATE\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}],\"default\":null},{\"name\":\"NAME\",\"type\":[\"null\",\"string\"],\"default\":null}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DealInfo\",\"fields\":[{\"name\":\"BUSINESS_UNIT_CODE\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"CURRENCY_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CUSTOMER_ID\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"DEAL_ID\",\"type\":\"long\"},{\"name\":\"DEAL_STATUS_ID\",\"type\":\"int\"},{\"name\":\"DEAL_TYPE_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"MAX_END_DATE\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}],\"default\":null},{\"name\":\"MIN_START_DATE\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}],\"default\":null},{\"name\":\"NAME\",\"type\":[\"null\",\"string\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.CharSequence BUSINESS_UNIT_CODE;
   @Deprecated public java.lang.Integer CURRENCY_ID;
@@ -210,18 +209,18 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /** Creates a new DealInfo RecordBuilder */
-  public static io.confluent.connect.avro.DealInfo.Builder newBuilder() {
-    return new io.confluent.connect.avro.DealInfo.Builder();
+  public static DealInfo.Builder newBuilder() {
+    return new DealInfo.Builder();
   }
   
   /** Creates a new DealInfo RecordBuilder by copying an existing Builder */
-  public static io.confluent.connect.avro.DealInfo.Builder newBuilder(io.confluent.connect.avro.DealInfo.Builder other) {
-    return new io.confluent.connect.avro.DealInfo.Builder(other);
+  public static DealInfo.Builder newBuilder(DealInfo.Builder other) {
+    return new DealInfo.Builder(other);
   }
   
   /** Creates a new DealInfo RecordBuilder by copying an existing DealInfo instance */
-  public static io.confluent.connect.avro.DealInfo.Builder newBuilder(io.confluent.connect.avro.DealInfo other) {
-    return new io.confluent.connect.avro.DealInfo.Builder(other);
+  public static DealInfo.Builder newBuilder(DealInfo other) {
+    return new DealInfo.Builder(other);
   }
   
   /**
@@ -242,11 +241,11 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
 
     /** Creates a new Builder */
     private Builder() {
-      super(io.confluent.connect.avro.DealInfo.SCHEMA$);
+      super(DealInfo.SCHEMA$);
     }
     
     /** Creates a Builder by copying an existing Builder */
-    private Builder(io.confluent.connect.avro.DealInfo.Builder other) {
+    private Builder(DealInfo.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.BUSINESS_UNIT_CODE)) {
         this.BUSINESS_UNIT_CODE = data().deepCopy(fields()[0].schema(), other.BUSINESS_UNIT_CODE);
@@ -287,8 +286,8 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Creates a Builder by copying an existing DealInfo instance */
-    private Builder(io.confluent.connect.avro.DealInfo other) {
-            super(io.confluent.connect.avro.DealInfo.SCHEMA$);
+    private Builder(DealInfo other) {
+            super(DealInfo.SCHEMA$);
       if (isValidValue(fields()[0], other.BUSINESS_UNIT_CODE)) {
         this.BUSINESS_UNIT_CODE = data().deepCopy(fields()[0].schema(), other.BUSINESS_UNIT_CODE);
         fieldSetFlags()[0] = true;
@@ -333,7 +332,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Sets the value of the 'BUSINESS_UNIT_CODE' field */
-    public io.confluent.connect.avro.DealInfo.Builder setBUSINESSUNITCODE(java.lang.CharSequence value) {
+    public DealInfo.Builder setBUSINESSUNITCODE(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.BUSINESS_UNIT_CODE = value;
       fieldSetFlags()[0] = true;
@@ -346,7 +345,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Clears the value of the 'BUSINESS_UNIT_CODE' field */
-    public io.confluent.connect.avro.DealInfo.Builder clearBUSINESSUNITCODE() {
+    public DealInfo.Builder clearBUSINESSUNITCODE() {
       BUSINESS_UNIT_CODE = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -358,7 +357,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Sets the value of the 'CURRENCY_ID' field */
-    public io.confluent.connect.avro.DealInfo.Builder setCURRENCYID(java.lang.Integer value) {
+    public DealInfo.Builder setCURRENCYID(java.lang.Integer value) {
       validate(fields()[1], value);
       this.CURRENCY_ID = value;
       fieldSetFlags()[1] = true;
@@ -371,7 +370,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Clears the value of the 'CURRENCY_ID' field */
-    public io.confluent.connect.avro.DealInfo.Builder clearCURRENCYID() {
+    public DealInfo.Builder clearCURRENCYID() {
       CURRENCY_ID = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -383,7 +382,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Sets the value of the 'CUSTOMER_ID' field */
-    public io.confluent.connect.avro.DealInfo.Builder setCUSTOMERID(java.lang.Long value) {
+    public DealInfo.Builder setCUSTOMERID(java.lang.Long value) {
       validate(fields()[2], value);
       this.CUSTOMER_ID = value;
       fieldSetFlags()[2] = true;
@@ -396,7 +395,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Clears the value of the 'CUSTOMER_ID' field */
-    public io.confluent.connect.avro.DealInfo.Builder clearCUSTOMERID() {
+    public DealInfo.Builder clearCUSTOMERID() {
       CUSTOMER_ID = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -408,7 +407,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Sets the value of the 'DEAL_ID' field */
-    public io.confluent.connect.avro.DealInfo.Builder setDEALID(long value) {
+    public DealInfo.Builder setDEALID(long value) {
       validate(fields()[3], value);
       this.DEAL_ID = value;
       fieldSetFlags()[3] = true;
@@ -421,7 +420,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Clears the value of the 'DEAL_ID' field */
-    public io.confluent.connect.avro.DealInfo.Builder clearDEALID() {
+    public DealInfo.Builder clearDEALID() {
       fieldSetFlags()[3] = false;
       return this;
     }
@@ -432,7 +431,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Sets the value of the 'DEAL_STATUS_ID' field */
-    public io.confluent.connect.avro.DealInfo.Builder setDEALSTATUSID(int value) {
+    public DealInfo.Builder setDEALSTATUSID(int value) {
       validate(fields()[4], value);
       this.DEAL_STATUS_ID = value;
       fieldSetFlags()[4] = true;
@@ -445,7 +444,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Clears the value of the 'DEAL_STATUS_ID' field */
-    public io.confluent.connect.avro.DealInfo.Builder clearDEALSTATUSID() {
+    public DealInfo.Builder clearDEALSTATUSID() {
       fieldSetFlags()[4] = false;
       return this;
     }
@@ -456,7 +455,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Sets the value of the 'DEAL_TYPE_ID' field */
-    public io.confluent.connect.avro.DealInfo.Builder setDEALTYPEID(java.lang.Integer value) {
+    public DealInfo.Builder setDEALTYPEID(java.lang.Integer value) {
       validate(fields()[5], value);
       this.DEAL_TYPE_ID = value;
       fieldSetFlags()[5] = true;
@@ -469,7 +468,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Clears the value of the 'DEAL_TYPE_ID' field */
-    public io.confluent.connect.avro.DealInfo.Builder clearDEALTYPEID() {
+    public DealInfo.Builder clearDEALTYPEID() {
       DEAL_TYPE_ID = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -481,7 +480,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Sets the value of the 'MAX_END_DATE' field */
-    public io.confluent.connect.avro.DealInfo.Builder setMAXENDDATE(java.lang.Long value) {
+    public DealInfo.Builder setMAXENDDATE(java.lang.Long value) {
       validate(fields()[6], value);
       this.MAX_END_DATE = value;
       fieldSetFlags()[6] = true;
@@ -494,7 +493,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Clears the value of the 'MAX_END_DATE' field */
-    public io.confluent.connect.avro.DealInfo.Builder clearMAXENDDATE() {
+    public DealInfo.Builder clearMAXENDDATE() {
       MAX_END_DATE = null;
       fieldSetFlags()[6] = false;
       return this;
@@ -506,7 +505,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Sets the value of the 'MIN_START_DATE' field */
-    public io.confluent.connect.avro.DealInfo.Builder setMINSTARTDATE(java.lang.Long value) {
+    public DealInfo.Builder setMINSTARTDATE(java.lang.Long value) {
       validate(fields()[7], value);
       this.MIN_START_DATE = value;
       fieldSetFlags()[7] = true;
@@ -519,7 +518,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Clears the value of the 'MIN_START_DATE' field */
-    public io.confluent.connect.avro.DealInfo.Builder clearMINSTARTDATE() {
+    public DealInfo.Builder clearMINSTARTDATE() {
       MIN_START_DATE = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -531,7 +530,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Sets the value of the 'NAME' field */
-    public io.confluent.connect.avro.DealInfo.Builder setNAME(java.lang.CharSequence value) {
+    public DealInfo.Builder setNAME(java.lang.CharSequence value) {
       validate(fields()[8], value);
       this.NAME = value;
       fieldSetFlags()[8] = true;
@@ -544,7 +543,7 @@ public class DealInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
     
     /** Clears the value of the 'NAME' field */
-    public io.confluent.connect.avro.DealInfo.Builder clearNAME() {
+    public DealInfo.Builder clearNAME() {
       NAME = null;
       fieldSetFlags()[8] = false;
       return this;

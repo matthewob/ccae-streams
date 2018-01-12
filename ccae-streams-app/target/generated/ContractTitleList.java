@@ -3,11 +3,10 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package io.confluent.connect.avro;  
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ContractTitleList\",\"namespace\":\"io.confluent.connect.avro\",\"fields\":[{\"name\":\"APPLICATION_ID\",\"type\":\"int\"},{\"name\":\"CONTRACT_ID_APP\",\"type\":\"int\"},{\"name\":\"CONTRACT_ID\",\"type\":\"long\"},{\"name\":\"CONTRACT_TYPE_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CONTRACT_STATUS_ID\",\"type\":\"int\"},{\"name\":\"CUSTOMER_ID_APP\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CUSTOMER_ID\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"COMMON_NAME\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"LEGAL_NAME\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"TITLE_LIST_ID_APP\",\"type\":\"int\"},{\"name\":\"TITLE_LIST_ID\",\"type\":\"long\"},{\"name\":\"ORDER_STATUS_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"TITLE_LIST_DESCRIPTION\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"TITLE_LIST_STATUS_ID\",\"type\":\"int\"},{\"name\":\"PARENT_TITLE_LIST_ID_APP\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"PARENT_TITLE_LIST_ID\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"CONTRACT_WORKFLOW_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CONTRACT_TITLE\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"PARENT_CONTRACT_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"C_USER_COMMENT\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"TL_USER_COMMENT\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"BILLING_UNIT_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"COMMITMENT_ANNUAL_PERCENT\",\"type\":[\"null\",{\"type\":\"bytes\",\"scale\":6,\"precision\":64,\"logicalType\":\"decimal\"}],\"default\":null},{\"name\":\"COMMITMENT_COMMENTS\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"COMMITMENT_ENABLED\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"COMMITMENT_TYPE_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CURRENCY_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CURRENCY_RATE\",\"type\":[\"null\",{\"type\":\"bytes\",\"scale\":6,\"precision\":64,\"logicalType\":\"decimal\"}],\"default\":null},{\"name\":\"GL_COUNTRY_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"REQUESTOR_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"RESERVATION_STATUS_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"RUNS\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"SALES_OFFICE_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"SALESPERSON_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"TITLE_LIST_START_DATE\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}],\"default\":null},{\"name\":\"TITLE_LIST_END_DATE\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}],\"default\":null},{\"name\":\"WORKFLOW_STATUS_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"RETIRE_TYPE_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"BILLING_UNIT_CODE\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"LINE_OF_BUSINESS_ID\",\"type\":[\"null\",\"int\"],\"default\":null}],\"aliases\":[\"CONTRACT\"]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ContractTitleList\",\"fields\":[{\"name\":\"APPLICATION_ID\",\"type\":\"int\"},{\"name\":\"CONTRACT_ID_APP\",\"type\":\"int\"},{\"name\":\"CONTRACT_ID\",\"type\":\"long\"},{\"name\":\"CONTRACT_TYPE_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CONTRACT_STATUS_ID\",\"type\":\"int\"},{\"name\":\"CUSTOMER_ID_APP\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CUSTOMER_ID\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"COMMON_NAME\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"LEGAL_NAME\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"TITLE_LIST_ID_APP\",\"type\":\"int\"},{\"name\":\"TITLE_LIST_ID\",\"type\":\"long\"},{\"name\":\"ORDER_STATUS_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"TITLE_LIST_DESCRIPTION\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"TITLE_LIST_STATUS_ID\",\"type\":\"int\"},{\"name\":\"PARENT_TITLE_LIST_ID_APP\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"PARENT_TITLE_LIST_ID\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"CONTRACT_WORKFLOW_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CONTRACT_TITLE\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"PARENT_CONTRACT_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"C_USER_COMMENT\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"TL_USER_COMMENT\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"BILLING_UNIT_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"COMMITMENT_ANNUAL_PERCENT\",\"type\":[\"null\",{\"type\":\"bytes\",\"scale\":6,\"precision\":64,\"logicalType\":\"decimal\"}],\"default\":null},{\"name\":\"COMMITMENT_COMMENTS\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"COMMITMENT_ENABLED\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"COMMITMENT_TYPE_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CURRENCY_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"CURRENCY_RATE\",\"type\":[\"null\",{\"type\":\"bytes\",\"scale\":6,\"precision\":64,\"logicalType\":\"decimal\"}],\"default\":null},{\"name\":\"GL_COUNTRY_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"REQUESTOR_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"RESERVATION_STATUS_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"RUNS\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"SALES_OFFICE_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"SALESPERSON_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"TITLE_LIST_START_DATE\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}],\"default\":null},{\"name\":\"TITLE_LIST_END_DATE\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}],\"default\":null},{\"name\":\"WORKFLOW_STATUS_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"RETIRE_TYPE_ID\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"BILLING_UNIT_CODE\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"LINE_OF_BUSINESS_ID\",\"type\":[\"null\",\"int\"],\"default\":null}],\"aliases\":[\"CONTRACT\"]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public int APPLICATION_ID;
   @Deprecated public int CONTRACT_ID_APP;
@@ -799,18 +798,18 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
   }
 
   /** Creates a new ContractTitleList RecordBuilder */
-  public static io.confluent.connect.avro.ContractTitleList.Builder newBuilder() {
-    return new io.confluent.connect.avro.ContractTitleList.Builder();
+  public static ContractTitleList.Builder newBuilder() {
+    return new ContractTitleList.Builder();
   }
   
   /** Creates a new ContractTitleList RecordBuilder by copying an existing Builder */
-  public static io.confluent.connect.avro.ContractTitleList.Builder newBuilder(io.confluent.connect.avro.ContractTitleList.Builder other) {
-    return new io.confluent.connect.avro.ContractTitleList.Builder(other);
+  public static ContractTitleList.Builder newBuilder(ContractTitleList.Builder other) {
+    return new ContractTitleList.Builder(other);
   }
   
   /** Creates a new ContractTitleList RecordBuilder by copying an existing ContractTitleList instance */
-  public static io.confluent.connect.avro.ContractTitleList.Builder newBuilder(io.confluent.connect.avro.ContractTitleList other) {
-    return new io.confluent.connect.avro.ContractTitleList.Builder(other);
+  public static ContractTitleList.Builder newBuilder(ContractTitleList other) {
+    return new ContractTitleList.Builder(other);
   }
   
   /**
@@ -862,11 +861,11 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
 
     /** Creates a new Builder */
     private Builder() {
-      super(io.confluent.connect.avro.ContractTitleList.SCHEMA$);
+      super(ContractTitleList.SCHEMA$);
     }
     
     /** Creates a Builder by copying an existing Builder */
-    private Builder(io.confluent.connect.avro.ContractTitleList.Builder other) {
+    private Builder(ContractTitleList.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.APPLICATION_ID)) {
         this.APPLICATION_ID = data().deepCopy(fields()[0].schema(), other.APPLICATION_ID);
@@ -1031,8 +1030,8 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Creates a Builder by copying an existing ContractTitleList instance */
-    private Builder(io.confluent.connect.avro.ContractTitleList other) {
-            super(io.confluent.connect.avro.ContractTitleList.SCHEMA$);
+    private Builder(ContractTitleList other) {
+            super(ContractTitleList.SCHEMA$);
       if (isValidValue(fields()[0], other.APPLICATION_ID)) {
         this.APPLICATION_ID = data().deepCopy(fields()[0].schema(), other.APPLICATION_ID);
         fieldSetFlags()[0] = true;
@@ -1201,7 +1200,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'APPLICATION_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setAPPLICATIONID(int value) {
+    public ContractTitleList.Builder setAPPLICATIONID(int value) {
       validate(fields()[0], value);
       this.APPLICATION_ID = value;
       fieldSetFlags()[0] = true;
@@ -1214,7 +1213,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'APPLICATION_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearAPPLICATIONID() {
+    public ContractTitleList.Builder clearAPPLICATIONID() {
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -1225,7 +1224,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'CONTRACT_ID_APP' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCONTRACTIDAPP(int value) {
+    public ContractTitleList.Builder setCONTRACTIDAPP(int value) {
       validate(fields()[1], value);
       this.CONTRACT_ID_APP = value;
       fieldSetFlags()[1] = true;
@@ -1238,7 +1237,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'CONTRACT_ID_APP' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCONTRACTIDAPP() {
+    public ContractTitleList.Builder clearCONTRACTIDAPP() {
       fieldSetFlags()[1] = false;
       return this;
     }
@@ -1249,7 +1248,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'CONTRACT_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCONTRACTID(long value) {
+    public ContractTitleList.Builder setCONTRACTID(long value) {
       validate(fields()[2], value);
       this.CONTRACT_ID = value;
       fieldSetFlags()[2] = true;
@@ -1262,7 +1261,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'CONTRACT_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCONTRACTID() {
+    public ContractTitleList.Builder clearCONTRACTID() {
       fieldSetFlags()[2] = false;
       return this;
     }
@@ -1273,7 +1272,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'CONTRACT_TYPE_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCONTRACTTYPEID(java.lang.Integer value) {
+    public ContractTitleList.Builder setCONTRACTTYPEID(java.lang.Integer value) {
       validate(fields()[3], value);
       this.CONTRACT_TYPE_ID = value;
       fieldSetFlags()[3] = true;
@@ -1286,7 +1285,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'CONTRACT_TYPE_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCONTRACTTYPEID() {
+    public ContractTitleList.Builder clearCONTRACTTYPEID() {
       CONTRACT_TYPE_ID = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -1298,7 +1297,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'CONTRACT_STATUS_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCONTRACTSTATUSID(int value) {
+    public ContractTitleList.Builder setCONTRACTSTATUSID(int value) {
       validate(fields()[4], value);
       this.CONTRACT_STATUS_ID = value;
       fieldSetFlags()[4] = true;
@@ -1311,7 +1310,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'CONTRACT_STATUS_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCONTRACTSTATUSID() {
+    public ContractTitleList.Builder clearCONTRACTSTATUSID() {
       fieldSetFlags()[4] = false;
       return this;
     }
@@ -1322,7 +1321,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'CUSTOMER_ID_APP' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCUSTOMERIDAPP(java.lang.Integer value) {
+    public ContractTitleList.Builder setCUSTOMERIDAPP(java.lang.Integer value) {
       validate(fields()[5], value);
       this.CUSTOMER_ID_APP = value;
       fieldSetFlags()[5] = true;
@@ -1335,7 +1334,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'CUSTOMER_ID_APP' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCUSTOMERIDAPP() {
+    public ContractTitleList.Builder clearCUSTOMERIDAPP() {
       CUSTOMER_ID_APP = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -1347,7 +1346,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'CUSTOMER_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCUSTOMERID(java.lang.Long value) {
+    public ContractTitleList.Builder setCUSTOMERID(java.lang.Long value) {
       validate(fields()[6], value);
       this.CUSTOMER_ID = value;
       fieldSetFlags()[6] = true;
@@ -1360,7 +1359,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'CUSTOMER_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCUSTOMERID() {
+    public ContractTitleList.Builder clearCUSTOMERID() {
       CUSTOMER_ID = null;
       fieldSetFlags()[6] = false;
       return this;
@@ -1372,7 +1371,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'COMMON_NAME' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCOMMONNAME(java.lang.CharSequence value) {
+    public ContractTitleList.Builder setCOMMONNAME(java.lang.CharSequence value) {
       validate(fields()[7], value);
       this.COMMON_NAME = value;
       fieldSetFlags()[7] = true;
@@ -1385,7 +1384,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'COMMON_NAME' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCOMMONNAME() {
+    public ContractTitleList.Builder clearCOMMONNAME() {
       COMMON_NAME = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -1397,7 +1396,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'LEGAL_NAME' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setLEGALNAME(java.lang.CharSequence value) {
+    public ContractTitleList.Builder setLEGALNAME(java.lang.CharSequence value) {
       validate(fields()[8], value);
       this.LEGAL_NAME = value;
       fieldSetFlags()[8] = true;
@@ -1410,7 +1409,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'LEGAL_NAME' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearLEGALNAME() {
+    public ContractTitleList.Builder clearLEGALNAME() {
       LEGAL_NAME = null;
       fieldSetFlags()[8] = false;
       return this;
@@ -1422,7 +1421,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'TITLE_LIST_ID_APP' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setTITLELISTIDAPP(int value) {
+    public ContractTitleList.Builder setTITLELISTIDAPP(int value) {
       validate(fields()[9], value);
       this.TITLE_LIST_ID_APP = value;
       fieldSetFlags()[9] = true;
@@ -1435,7 +1434,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'TITLE_LIST_ID_APP' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearTITLELISTIDAPP() {
+    public ContractTitleList.Builder clearTITLELISTIDAPP() {
       fieldSetFlags()[9] = false;
       return this;
     }
@@ -1446,7 +1445,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'TITLE_LIST_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setTITLELISTID(long value) {
+    public ContractTitleList.Builder setTITLELISTID(long value) {
       validate(fields()[10], value);
       this.TITLE_LIST_ID = value;
       fieldSetFlags()[10] = true;
@@ -1459,7 +1458,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'TITLE_LIST_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearTITLELISTID() {
+    public ContractTitleList.Builder clearTITLELISTID() {
       fieldSetFlags()[10] = false;
       return this;
     }
@@ -1470,7 +1469,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'ORDER_STATUS_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setORDERSTATUSID(java.lang.Integer value) {
+    public ContractTitleList.Builder setORDERSTATUSID(java.lang.Integer value) {
       validate(fields()[11], value);
       this.ORDER_STATUS_ID = value;
       fieldSetFlags()[11] = true;
@@ -1483,7 +1482,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'ORDER_STATUS_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearORDERSTATUSID() {
+    public ContractTitleList.Builder clearORDERSTATUSID() {
       ORDER_STATUS_ID = null;
       fieldSetFlags()[11] = false;
       return this;
@@ -1495,7 +1494,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'TITLE_LIST_DESCRIPTION' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setTITLELISTDESCRIPTION(java.lang.CharSequence value) {
+    public ContractTitleList.Builder setTITLELISTDESCRIPTION(java.lang.CharSequence value) {
       validate(fields()[12], value);
       this.TITLE_LIST_DESCRIPTION = value;
       fieldSetFlags()[12] = true;
@@ -1508,7 +1507,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'TITLE_LIST_DESCRIPTION' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearTITLELISTDESCRIPTION() {
+    public ContractTitleList.Builder clearTITLELISTDESCRIPTION() {
       TITLE_LIST_DESCRIPTION = null;
       fieldSetFlags()[12] = false;
       return this;
@@ -1520,7 +1519,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'TITLE_LIST_STATUS_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setTITLELISTSTATUSID(int value) {
+    public ContractTitleList.Builder setTITLELISTSTATUSID(int value) {
       validate(fields()[13], value);
       this.TITLE_LIST_STATUS_ID = value;
       fieldSetFlags()[13] = true;
@@ -1533,7 +1532,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'TITLE_LIST_STATUS_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearTITLELISTSTATUSID() {
+    public ContractTitleList.Builder clearTITLELISTSTATUSID() {
       fieldSetFlags()[13] = false;
       return this;
     }
@@ -1544,7 +1543,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'PARENT_TITLE_LIST_ID_APP' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setPARENTTITLELISTIDAPP(java.lang.Integer value) {
+    public ContractTitleList.Builder setPARENTTITLELISTIDAPP(java.lang.Integer value) {
       validate(fields()[14], value);
       this.PARENT_TITLE_LIST_ID_APP = value;
       fieldSetFlags()[14] = true;
@@ -1557,7 +1556,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'PARENT_TITLE_LIST_ID_APP' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearPARENTTITLELISTIDAPP() {
+    public ContractTitleList.Builder clearPARENTTITLELISTIDAPP() {
       PARENT_TITLE_LIST_ID_APP = null;
       fieldSetFlags()[14] = false;
       return this;
@@ -1569,7 +1568,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'PARENT_TITLE_LIST_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setPARENTTITLELISTID(java.lang.Long value) {
+    public ContractTitleList.Builder setPARENTTITLELISTID(java.lang.Long value) {
       validate(fields()[15], value);
       this.PARENT_TITLE_LIST_ID = value;
       fieldSetFlags()[15] = true;
@@ -1582,7 +1581,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'PARENT_TITLE_LIST_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearPARENTTITLELISTID() {
+    public ContractTitleList.Builder clearPARENTTITLELISTID() {
       PARENT_TITLE_LIST_ID = null;
       fieldSetFlags()[15] = false;
       return this;
@@ -1594,7 +1593,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'CONTRACT_WORKFLOW_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCONTRACTWORKFLOWID(java.lang.Integer value) {
+    public ContractTitleList.Builder setCONTRACTWORKFLOWID(java.lang.Integer value) {
       validate(fields()[16], value);
       this.CONTRACT_WORKFLOW_ID = value;
       fieldSetFlags()[16] = true;
@@ -1607,7 +1606,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'CONTRACT_WORKFLOW_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCONTRACTWORKFLOWID() {
+    public ContractTitleList.Builder clearCONTRACTWORKFLOWID() {
       CONTRACT_WORKFLOW_ID = null;
       fieldSetFlags()[16] = false;
       return this;
@@ -1619,7 +1618,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'CONTRACT_TITLE' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCONTRACTTITLE(java.lang.CharSequence value) {
+    public ContractTitleList.Builder setCONTRACTTITLE(java.lang.CharSequence value) {
       validate(fields()[17], value);
       this.CONTRACT_TITLE = value;
       fieldSetFlags()[17] = true;
@@ -1632,7 +1631,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'CONTRACT_TITLE' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCONTRACTTITLE() {
+    public ContractTitleList.Builder clearCONTRACTTITLE() {
       CONTRACT_TITLE = null;
       fieldSetFlags()[17] = false;
       return this;
@@ -1644,7 +1643,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'PARENT_CONTRACT_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setPARENTCONTRACTID(java.lang.Integer value) {
+    public ContractTitleList.Builder setPARENTCONTRACTID(java.lang.Integer value) {
       validate(fields()[18], value);
       this.PARENT_CONTRACT_ID = value;
       fieldSetFlags()[18] = true;
@@ -1657,7 +1656,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'PARENT_CONTRACT_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearPARENTCONTRACTID() {
+    public ContractTitleList.Builder clearPARENTCONTRACTID() {
       PARENT_CONTRACT_ID = null;
       fieldSetFlags()[18] = false;
       return this;
@@ -1669,7 +1668,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'C_USER_COMMENT' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCUSERCOMMENT(java.lang.CharSequence value) {
+    public ContractTitleList.Builder setCUSERCOMMENT(java.lang.CharSequence value) {
       validate(fields()[19], value);
       this.C_USER_COMMENT = value;
       fieldSetFlags()[19] = true;
@@ -1682,7 +1681,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'C_USER_COMMENT' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCUSERCOMMENT() {
+    public ContractTitleList.Builder clearCUSERCOMMENT() {
       C_USER_COMMENT = null;
       fieldSetFlags()[19] = false;
       return this;
@@ -1694,7 +1693,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'TL_USER_COMMENT' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setTLUSERCOMMENT(java.lang.CharSequence value) {
+    public ContractTitleList.Builder setTLUSERCOMMENT(java.lang.CharSequence value) {
       validate(fields()[20], value);
       this.TL_USER_COMMENT = value;
       fieldSetFlags()[20] = true;
@@ -1707,7 +1706,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'TL_USER_COMMENT' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearTLUSERCOMMENT() {
+    public ContractTitleList.Builder clearTLUSERCOMMENT() {
       TL_USER_COMMENT = null;
       fieldSetFlags()[20] = false;
       return this;
@@ -1719,7 +1718,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'BILLING_UNIT_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setBILLINGUNITID(java.lang.Integer value) {
+    public ContractTitleList.Builder setBILLINGUNITID(java.lang.Integer value) {
       validate(fields()[21], value);
       this.BILLING_UNIT_ID = value;
       fieldSetFlags()[21] = true;
@@ -1732,7 +1731,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'BILLING_UNIT_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearBILLINGUNITID() {
+    public ContractTitleList.Builder clearBILLINGUNITID() {
       BILLING_UNIT_ID = null;
       fieldSetFlags()[21] = false;
       return this;
@@ -1744,7 +1743,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'COMMITMENT_ANNUAL_PERCENT' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCOMMITMENTANNUALPERCENT(java.nio.ByteBuffer value) {
+    public ContractTitleList.Builder setCOMMITMENTANNUALPERCENT(java.nio.ByteBuffer value) {
       validate(fields()[22], value);
       this.COMMITMENT_ANNUAL_PERCENT = value;
       fieldSetFlags()[22] = true;
@@ -1757,7 +1756,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'COMMITMENT_ANNUAL_PERCENT' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCOMMITMENTANNUALPERCENT() {
+    public ContractTitleList.Builder clearCOMMITMENTANNUALPERCENT() {
       COMMITMENT_ANNUAL_PERCENT = null;
       fieldSetFlags()[22] = false;
       return this;
@@ -1769,7 +1768,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'COMMITMENT_COMMENTS' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCOMMITMENTCOMMENTS(java.lang.CharSequence value) {
+    public ContractTitleList.Builder setCOMMITMENTCOMMENTS(java.lang.CharSequence value) {
       validate(fields()[23], value);
       this.COMMITMENT_COMMENTS = value;
       fieldSetFlags()[23] = true;
@@ -1782,7 +1781,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'COMMITMENT_COMMENTS' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCOMMITMENTCOMMENTS() {
+    public ContractTitleList.Builder clearCOMMITMENTCOMMENTS() {
       COMMITMENT_COMMENTS = null;
       fieldSetFlags()[23] = false;
       return this;
@@ -1794,7 +1793,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'COMMITMENT_ENABLED' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCOMMITMENTENABLED(java.lang.CharSequence value) {
+    public ContractTitleList.Builder setCOMMITMENTENABLED(java.lang.CharSequence value) {
       validate(fields()[24], value);
       this.COMMITMENT_ENABLED = value;
       fieldSetFlags()[24] = true;
@@ -1807,7 +1806,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'COMMITMENT_ENABLED' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCOMMITMENTENABLED() {
+    public ContractTitleList.Builder clearCOMMITMENTENABLED() {
       COMMITMENT_ENABLED = null;
       fieldSetFlags()[24] = false;
       return this;
@@ -1819,7 +1818,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'COMMITMENT_TYPE_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCOMMITMENTTYPEID(java.lang.Integer value) {
+    public ContractTitleList.Builder setCOMMITMENTTYPEID(java.lang.Integer value) {
       validate(fields()[25], value);
       this.COMMITMENT_TYPE_ID = value;
       fieldSetFlags()[25] = true;
@@ -1832,7 +1831,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'COMMITMENT_TYPE_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCOMMITMENTTYPEID() {
+    public ContractTitleList.Builder clearCOMMITMENTTYPEID() {
       COMMITMENT_TYPE_ID = null;
       fieldSetFlags()[25] = false;
       return this;
@@ -1844,7 +1843,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'CURRENCY_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCURRENCYID(java.lang.Integer value) {
+    public ContractTitleList.Builder setCURRENCYID(java.lang.Integer value) {
       validate(fields()[26], value);
       this.CURRENCY_ID = value;
       fieldSetFlags()[26] = true;
@@ -1857,7 +1856,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'CURRENCY_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCURRENCYID() {
+    public ContractTitleList.Builder clearCURRENCYID() {
       CURRENCY_ID = null;
       fieldSetFlags()[26] = false;
       return this;
@@ -1869,7 +1868,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'CURRENCY_RATE' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setCURRENCYRATE(java.nio.ByteBuffer value) {
+    public ContractTitleList.Builder setCURRENCYRATE(java.nio.ByteBuffer value) {
       validate(fields()[27], value);
       this.CURRENCY_RATE = value;
       fieldSetFlags()[27] = true;
@@ -1882,7 +1881,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'CURRENCY_RATE' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearCURRENCYRATE() {
+    public ContractTitleList.Builder clearCURRENCYRATE() {
       CURRENCY_RATE = null;
       fieldSetFlags()[27] = false;
       return this;
@@ -1894,7 +1893,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'GL_COUNTRY_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setGLCOUNTRYID(java.lang.Integer value) {
+    public ContractTitleList.Builder setGLCOUNTRYID(java.lang.Integer value) {
       validate(fields()[28], value);
       this.GL_COUNTRY_ID = value;
       fieldSetFlags()[28] = true;
@@ -1907,7 +1906,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'GL_COUNTRY_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearGLCOUNTRYID() {
+    public ContractTitleList.Builder clearGLCOUNTRYID() {
       GL_COUNTRY_ID = null;
       fieldSetFlags()[28] = false;
       return this;
@@ -1919,7 +1918,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'REQUESTOR_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setREQUESTORID(java.lang.Integer value) {
+    public ContractTitleList.Builder setREQUESTORID(java.lang.Integer value) {
       validate(fields()[29], value);
       this.REQUESTOR_ID = value;
       fieldSetFlags()[29] = true;
@@ -1932,7 +1931,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'REQUESTOR_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearREQUESTORID() {
+    public ContractTitleList.Builder clearREQUESTORID() {
       REQUESTOR_ID = null;
       fieldSetFlags()[29] = false;
       return this;
@@ -1944,7 +1943,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'RESERVATION_STATUS_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setRESERVATIONSTATUSID(java.lang.Integer value) {
+    public ContractTitleList.Builder setRESERVATIONSTATUSID(java.lang.Integer value) {
       validate(fields()[30], value);
       this.RESERVATION_STATUS_ID = value;
       fieldSetFlags()[30] = true;
@@ -1957,7 +1956,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'RESERVATION_STATUS_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearRESERVATIONSTATUSID() {
+    public ContractTitleList.Builder clearRESERVATIONSTATUSID() {
       RESERVATION_STATUS_ID = null;
       fieldSetFlags()[30] = false;
       return this;
@@ -1969,7 +1968,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'RUNS' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setRUNS(java.lang.Integer value) {
+    public ContractTitleList.Builder setRUNS(java.lang.Integer value) {
       validate(fields()[31], value);
       this.RUNS = value;
       fieldSetFlags()[31] = true;
@@ -1982,7 +1981,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'RUNS' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearRUNS() {
+    public ContractTitleList.Builder clearRUNS() {
       RUNS = null;
       fieldSetFlags()[31] = false;
       return this;
@@ -1994,7 +1993,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'SALES_OFFICE_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setSALESOFFICEID(java.lang.Integer value) {
+    public ContractTitleList.Builder setSALESOFFICEID(java.lang.Integer value) {
       validate(fields()[32], value);
       this.SALES_OFFICE_ID = value;
       fieldSetFlags()[32] = true;
@@ -2007,7 +2006,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'SALES_OFFICE_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearSALESOFFICEID() {
+    public ContractTitleList.Builder clearSALESOFFICEID() {
       SALES_OFFICE_ID = null;
       fieldSetFlags()[32] = false;
       return this;
@@ -2019,7 +2018,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'SALESPERSON_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setSALESPERSONID(java.lang.Integer value) {
+    public ContractTitleList.Builder setSALESPERSONID(java.lang.Integer value) {
       validate(fields()[33], value);
       this.SALESPERSON_ID = value;
       fieldSetFlags()[33] = true;
@@ -2032,7 +2031,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'SALESPERSON_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearSALESPERSONID() {
+    public ContractTitleList.Builder clearSALESPERSONID() {
       SALESPERSON_ID = null;
       fieldSetFlags()[33] = false;
       return this;
@@ -2044,7 +2043,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'TITLE_LIST_START_DATE' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setTITLELISTSTARTDATE(java.lang.Long value) {
+    public ContractTitleList.Builder setTITLELISTSTARTDATE(java.lang.Long value) {
       validate(fields()[34], value);
       this.TITLE_LIST_START_DATE = value;
       fieldSetFlags()[34] = true;
@@ -2057,7 +2056,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'TITLE_LIST_START_DATE' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearTITLELISTSTARTDATE() {
+    public ContractTitleList.Builder clearTITLELISTSTARTDATE() {
       TITLE_LIST_START_DATE = null;
       fieldSetFlags()[34] = false;
       return this;
@@ -2069,7 +2068,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'TITLE_LIST_END_DATE' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setTITLELISTENDDATE(java.lang.Long value) {
+    public ContractTitleList.Builder setTITLELISTENDDATE(java.lang.Long value) {
       validate(fields()[35], value);
       this.TITLE_LIST_END_DATE = value;
       fieldSetFlags()[35] = true;
@@ -2082,7 +2081,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'TITLE_LIST_END_DATE' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearTITLELISTENDDATE() {
+    public ContractTitleList.Builder clearTITLELISTENDDATE() {
       TITLE_LIST_END_DATE = null;
       fieldSetFlags()[35] = false;
       return this;
@@ -2094,7 +2093,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'WORKFLOW_STATUS_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setWORKFLOWSTATUSID(java.lang.Integer value) {
+    public ContractTitleList.Builder setWORKFLOWSTATUSID(java.lang.Integer value) {
       validate(fields()[36], value);
       this.WORKFLOW_STATUS_ID = value;
       fieldSetFlags()[36] = true;
@@ -2107,7 +2106,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'WORKFLOW_STATUS_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearWORKFLOWSTATUSID() {
+    public ContractTitleList.Builder clearWORKFLOWSTATUSID() {
       WORKFLOW_STATUS_ID = null;
       fieldSetFlags()[36] = false;
       return this;
@@ -2119,7 +2118,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'RETIRE_TYPE_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setRETIRETYPEID(java.lang.Integer value) {
+    public ContractTitleList.Builder setRETIRETYPEID(java.lang.Integer value) {
       validate(fields()[37], value);
       this.RETIRE_TYPE_ID = value;
       fieldSetFlags()[37] = true;
@@ -2132,7 +2131,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'RETIRE_TYPE_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearRETIRETYPEID() {
+    public ContractTitleList.Builder clearRETIRETYPEID() {
       RETIRE_TYPE_ID = null;
       fieldSetFlags()[37] = false;
       return this;
@@ -2144,7 +2143,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'BILLING_UNIT_CODE' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setBILLINGUNITCODE(java.lang.CharSequence value) {
+    public ContractTitleList.Builder setBILLINGUNITCODE(java.lang.CharSequence value) {
       validate(fields()[38], value);
       this.BILLING_UNIT_CODE = value;
       fieldSetFlags()[38] = true;
@@ -2157,7 +2156,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'BILLING_UNIT_CODE' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearBILLINGUNITCODE() {
+    public ContractTitleList.Builder clearBILLINGUNITCODE() {
       BILLING_UNIT_CODE = null;
       fieldSetFlags()[38] = false;
       return this;
@@ -2169,7 +2168,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'LINE_OF_BUSINESS_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder setLINEOFBUSINESSID(java.lang.Integer value) {
+    public ContractTitleList.Builder setLINEOFBUSINESSID(java.lang.Integer value) {
       validate(fields()[39], value);
       this.LINE_OF_BUSINESS_ID = value;
       fieldSetFlags()[39] = true;
@@ -2182,7 +2181,7 @@ public class ContractTitleList extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Clears the value of the 'LINE_OF_BUSINESS_ID' field */
-    public io.confluent.connect.avro.ContractTitleList.Builder clearLINEOFBUSINESSID() {
+    public ContractTitleList.Builder clearLINEOFBUSINESSID() {
       LINE_OF_BUSINESS_ID = null;
       fieldSetFlags()[39] = false;
       return this;

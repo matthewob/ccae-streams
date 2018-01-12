@@ -1,5 +1,3 @@
-package ccae.streams;
-
 import java.util.Collections;
 import java.util.Map;
 import java.util.Properties;
@@ -12,10 +10,6 @@ import org.apache.kafka.streams.StreamsConfig;
 import org.apache.kafka.streams.kstream.KStream;
 import org.apache.kafka.streams.kstream.KStreamBuilder;
 
-import io.confluent.connect.avro.CheckedInOutRights;
-import io.confluent.connect.avro.ContractTitleList;
-import io.confluent.connect.avro.DealInfo;
-import io.confluent.connect.avro.LicenseRight;
 import io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig;
 import io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde;
 
